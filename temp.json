@@ -1,0 +1,133 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "email" : "uthaya@gmail.com",
+            "password": "uthaya",
+            "age": 20,
+            "dob": "10-08-2000",
+            "firstName": "Uthaya Sankar",
+            "lastName": "N",
+            "other": 
+            {
+                "address": "2G/572A Rajiv Nagar 9th street North",
+                "city": "Thoothukudi",
+                "state": "Tamilnadu",
+                "pincode": "628008",
+                "phone": "7094015979"
+            }
+        },
+        {
+            "email" : "Gokula@gmail.com",
+            "password": "gokul",
+            "age": 20,
+            "dob": "14-08-2000",
+            "firstName": "Gokulakrishnan",
+            "lastName": "K",
+            "other": 
+            {
+                "address": "39, Anna nagar",
+                "city": "trichy",
+                "state": "Tamilnadu",
+                "pincode": "628002",
+                "phone": "7094264756"
+            }
+        },
+        {
+            "email" : "karthi@gmail.com",
+            "password": "karthi",
+            "age": 20,
+            "dob": "14-08-2000",
+            "firstName": "Karthick",
+            "lastName": "m",
+            "other": 
+            {
+                "address": "36, tuvipuram",
+                "city": "trichy",
+                "state": "Tamilnadu",
+                "pincode": "628002",
+                "phone": "7056879678"
+            }
+        },
+        {
+            "email" : "sivakami@gmail.com",
+            "password": "sivakami",
+            "age": 20,
+            "dob": "09-01-2001",
+            "firstName": "Sivakami",
+            "lastName": "A",
+            "other": 
+            {
+                "address": "36, svg mills",
+                "city": "Udumalapet",
+                "state": "Tamilnadu",
+                "pincode": "601002",
+                "phone": "7056879678"
+            }
+        },
+        {
+            "email" : "nithin@gmail.com",
+            "password": "nithin",
+            "age": 20,
+            "dob": "14-08-2000",
+            "firstName": "Nithin",
+            "lastName": "K",
+            "other": 
+            {
+                "address": "36, tuvipuram",
+                "city": "trichy",
+                "state": "Tamilnadu",
+                "pincode": "628002",
+                "phone": "7056879678"
+            }
+        },
+        {
+            "email" : "sujitha@gmail.com",
+            "password": "sujitha",
+            "age": 20,
+            "dob": "14-08-2000",
+            "firstName": "Sujitha",
+            "lastName": "m",
+            "other": 
+            {
+                "address": "36, tuvipuram",
+                "city": "Salem",
+                "state": "Tamilnadu",
+                "pincode": "628002",
+                "phone": "7056879678"
+            }
+        },
+        {
+            "email" : "vinothini@gmail.com",
+            "password": "vinothini",
+            "age": 20,
+            "dob": "14-08-2000",
+            "firstName": "Vinothini",
+            "lastName": "D",
+            "other": 
+            {
+                "address": "36, tuvipuram",
+                "city": "Pudhu kotai",
+                "state": "Tamilnadu",
+                "pincode": "628002",
+                "phone": "7056879678"
+            }
+        },
+        {
+            "email" : "pavithra@gmail.com",
+            "password": "pavithra",
+            "age": 20,
+            "dob": "14-08-2000",
+            "firstName": "Pavithra",
+            "lastName": "R V",
+            "other": 
+            {
+                "address": "36, tuvipuram",
+                "city": "Kallakurichi",
+                "state": "Tamilnadu",
+                "pincode": "628002",
+                "phone": "7056879678"
+            }
+        }
+    ]   
+}

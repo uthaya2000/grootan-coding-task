@@ -1,0 +1,69 @@
+<%- include('partials/header.ejs') %> 
+<script defer>
+    localStorage.index = 0;
+    async function onload()
+    {
+        const data = await axios.get('/users');
+        users = data.data;
+        localStorage["users"] = JSON.stringify(users)
+        globalThis.userso = 100;
+        document.getElementById('name').innerText = users[0].firstName + " " + users[0].lastName
+        document.getElementById('mail').innerText = users[0].email
+        document.getElementById('more').href = `/show/${users[0].email}/`
+    }
+    onload();
+
+    function pre(){
+        users = JSON.parse(localStorage["users"])
+        if(localStorage.index > 0)
+        {
+            localStorage.index = Number(localStorage.index) - 1;
+            i = localStorage.index;
+            document.getElementById('name').innerText = users[i].firstName + " " + users[0].lastName
+            document.getElementById('mail').innerText = users[i].email
+            document.getElementById('more').href = `/show/${users[i].email}/`
+        }
+    }
+
+    function next()
+    {
+        users = JSON.parse(localStorage["users"])
+        if(localStorage.index < users.length-1)
+        {
+            localStorage.index = Number(localStorage.index) + 1;
+            i = localStorage.index;
+            document.getElementById('name').innerText = users[i].firstName + " " + users[0].lastName
+            document.getElementById('mail').innerText = users[i].email
+            document.getElementById('more').href = `/show/${users[i].email}/`
+        }
+    }
+</script>
+<div class="container" id="home">
+    <div class="jumbotron jumbotron-fluid mt-3">
+        <div class="container">
+            <h1 class="display-4">Grootan Users</h1>
+            <p class="lead">There is list of users available in website.</p>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://www.seekpng.com/png/detail/46-462910_person-icon-black-avatar-png.png" alt="Card image cap">
+            <div class="card-body">
+                <p id="mail"></p>
+                <p class="card-text" id="name"><b></b></p>
+                <a href="/" class="btn btn-dark" id="more">view more</a>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+        <button class="mr-3" onclick="pre()">
+            <i class='bx bxs-left-arrow-circle'></i>
+        </button>
+        <button onclick="next()">
+            <i class='bx bxs-right-arrow-circle'></i>
+        </button>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs') %> 

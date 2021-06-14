@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %> 
+
+
+<div class="container mt-5" id="show">
+    <div class="row">
+        <div class="col-md-6">
+            <img src=" https://www.seekpng.com/png/detail/46-462910_person-icon-black-avatar-png.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <b>
+                        <%= user.firstName + user.lastName %> 
+                    </b>
+                </li>
+                <li class="list-group-item"><%= user.email %> </li>
+                <li class="list-group-item"><%= user.dob %> </li>
+                <li class="list-group-item"><%= user.other.address %>, <%= user.other.city %>, <%= user.other.state%> - <%= user.other.pincode %></li>
+                <li class="list-group-item"><%= user.other.phone %></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs') %> 

@@ -1,0 +1,58 @@
+body{
+    font-family: 'Mate SC', serif;
+}
+
+#login .form{
+    margin-top: 50px;
+    padding: 0;
+}
+
+#login input{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#login label{
+    font-weight: 600;
+}
+
+#login h3{
+    font-size: 50px;
+}
+
+
+/* home page */
+
+#home .jumbotron{
+    height: 200px;
+    border-radius: 25px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-image: url("https://townsquare.media/site/442/files/2017/04/hot-toys-baby-groot.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89");
+    background-position: 3em;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+}
+
+#home .card-custom {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 25%;
+}
+
+#home .card-custom:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#home .container-custom {
+  padding: 2px 16px;
+}
+
+#home i{
+    font-size: 35px;
+}
+
+#home button{
+    border: none;
+    background-color: white;
+}
