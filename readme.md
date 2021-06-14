@@ -30,10 +30,10 @@ Completed the following features
 Notes
 -----
 1. I have included my temp.json file which contains the list of users.
+2. Most importantly we can only make 50 request/day using this beeceptor API link. So if users not displayed, there
+   429 Status code error (Too many requests).
 
-
-
-Thank you
+                                       Thank you
 
 - Uthaya Sankar N
 
