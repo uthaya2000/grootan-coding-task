@@ -51,7 +51,7 @@ Important Notes
 
 Deployed Link
 ---------
-      - https://grootan-coding-task.herokuapp.com/
+      https://grootan-coding-task.herokuapp.com/
 
 - Uthaya Sankar N
 
