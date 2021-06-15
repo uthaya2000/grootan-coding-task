@@ -7,6 +7,14 @@ Technologies Used
 5. Beeceptor (Making mock API)
 6. Bootstrap 4
 
+Tools Required to run my app
+---------------
+- NodeJS framework
+
+How To run my application
+------------------------
+1. Clone this repository using git clone.
+2. After cloning just move to the directory of my project in your system and run npm install command.
 
 Instructions
 --------------
