@@ -10,6 +10,7 @@
         document.getElementById('name').innerText = users[0].firstName + " " + users[0].lastName
         document.getElementById('mail').innerText = users[0].email
         document.getElementById('more').href = `/show/${users[0].email}/`
+        document.getElementById('page').innerText = 1;
     }
     onload();
 
@@ -18,11 +19,15 @@
         if(localStorage.index > 0)
         {
             localStorage.index = Number(localStorage.index) - 1;
-            i = localStorage.index;
-            document.getElementById('name').innerText = users[i].firstName + " " + users[0].lastName
-            document.getElementById('mail').innerText = users[i].email
-            document.getElementById('more').href = `/show/${users[i].email}/`
         }
+        else{
+            localStorage.index = Number(users.length-1)
+        }
+        i = localStorage.index;
+        document.getElementById('name').innerText = users[i].firstName + " " + users[0].lastName
+        document.getElementById('mail').innerText = users[i].email
+        document.getElementById('more').href = `/show/${users[i].email}/`
+        document.getElementById('page').innerText = Number(i) + 1;
     }
 
     function next()
@@ -31,18 +36,20 @@
         if(localStorage.index < users.length-1)
         {
             localStorage.index = Number(localStorage.index) + 1;
-            i = localStorage.index;
-            document.getElementById('name').innerText = users[i].firstName + " " + users[0].lastName
-            document.getElementById('mail').innerText = users[i].email
-            document.getElementById('more').href = `/show/${users[i].email}/`
+        }else{
+            localStorage.index = 0;
         }
+        i = localStorage.index;
+        document.getElementById('name').innerText = users[i].firstName + " " + users[0].lastName
+        document.getElementById('mail').innerText = users[i].email
+        document.getElementById('more').href = `/show/${users[i].email}/`
+        document.getElementById('page').innerText = Number(i) + 1;
     }
 </script>
 <div class="container" id="home">
     <div class="jumbotron jumbotron-fluid mt-3">
         <div class="container">
             <h1 class="display-4">Grootan Users</h1>
-            <p class="lead">There is list of users available in website.</p>
         </div>
     </div>
 
@@ -51,15 +58,16 @@
             <img class="card-img-top" src="https://www.seekpng.com/png/detail/46-462910_person-icon-black-avatar-png.png" alt="Card image cap">
             <div class="card-body">
                 <p id="mail"></p>
-                <p class="card-text" id="name"><b></b></p>
-                <a href="/" class="btn btn-dark" id="more">view more</a>
+                <b><p class="card-text" id="name"></p></b>
+                <a href="/" class="btn btn-dark mt-2" id="more">view more</a>
             </div>
         </div>
     </div>
     <div class="d-flex justify-content-center mt-3">
-        <button class="mr-3" onclick="pre()">
+        <button class="" onclick="pre()">
             <i class='bx bxs-left-arrow-circle'></i>
         </button>
+        <b><p id="page"></p></b>
         <button onclick="next()">
             <i class='bx bxs-right-arrow-circle'></i>
         </button>

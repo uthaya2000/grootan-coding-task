@@ -32,9 +32,12 @@ app.get("/", isLoggedIn, (req, res) => {
 app.get('/users', isLoggedIn, async (req, res) => {
     
     const users = await axios.get('https://grootan-users1.free.beeceptor.com/users')
+    res.json(users.data.data)
+
+
     // var users = fs.readFileSync(__dirname + '/temp.json');
     // users = JSON.parse(users)
-    res.json(users.data.data)
+    // res.json(users.data)
 })
 
 //Session managing simple login and registration page.
@@ -58,11 +61,17 @@ app.get('/logout', (req, res) => {
 
 //When a user clicks on a particular record, he should be able to see more details of that user.
 app.get('/show/:mailid/', isLoggedIn, async (req, res) => {
+
     const users = await axios.get('https://grootan-users1.free.beeceptor.com/users')
+    var index = users.data.data.map(u => u.email)
+    res.render('show', { user: users.data.data[index.indexOf(req.params.mailid)] })
+    
+    
     // var users = fs.readFileSync(__dirname + '/temp.json');
     // users = JSON.parse(users)
-    var index = users.data.data.map(u => u.email)
-    res.render('show', {user: users.data.data[index.indexOf(req.params.mailid)]})
+    // var index = users.data.map(u => u.email)
+    // res.render('show', {user: users.data[index.indexOf(req.params.mailid)]})
+
 })
 
 app.listen(process.env.PORT || 4000, () => {

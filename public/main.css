@@ -56,3 +56,8 @@ body{
     border: none;
     background-color: white;
 }
+
+
+#more:hover{
+    background-color: gray
+}
