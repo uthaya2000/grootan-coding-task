@@ -34,14 +34,24 @@ Completed the following features
 6. Final source code is shared in GitHUB.
 7. App deployed in Heroku.
 
+Directories and files Details of my app
+------------------------
+1. index.js - main server controller.
+2. public folder
+      - Css file
+      - images and some static files.
+3. views folder
+      - Frontend UI and template driven files
 
-Notes
+Important Notes
 -----
 1. I have included my temp.json file which contains the list of users.
 2. Most importantly we can only make 50 request/day using this beeceptor API link. So if users not displayed, there
    429 Status code error (Too many requests).
 
-                                       Thank you
+Deployed Link
+---------
+      - https://grootan-coding-task.herokuapp.com/
 
 - Uthaya Sankar N
 
