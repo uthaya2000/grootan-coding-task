@@ -8,7 +8,7 @@ Technologies Used
 6. Bootstrap 4
 
 
-Insturctions
+Instructions
 --------------
 1. You can't see the list of users without logging in or registering. I have used session for login.
 2. After logging in you can see the a user with next & previous button below the card view.
