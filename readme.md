@@ -52,6 +52,9 @@ Important Notes
 Deployed Link
 ---------
       https://grootan-coding-task.herokuapp.com/
+API link
+-----
+      https://grootan-users1.free.beeceptor.com/users
 
 - Uthaya Sankar N
 
